@@ -1,139 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="INNOVARA.LUXE - Premium Men's Jewelry">
-  <meta name="keywords" content="luxury jewelry, men's accessories, leather bracelet, cuban chain, premium jewelry">
-  <title>INNOVARA.LUXE - Luxury Men's Jewelry</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INNOVARA.LUXE
+ - Luxury Men's Jewelry</title>
   <style>
-    /* General Styles */
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #000;
       color: #fff;
     }
 
-    h1, h2, h3 {
-      font-family: 'Georgia', serif;
-    }
-
-    /* Hero Section */
     .hero {
-      background: linear-gradient(45deg, #000, #d4af37);
       height: 100vh;
+      background: linear-gradient(45deg, #000, #d4af37);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      animation: fadeIn 2s ease-in;
-      position: relative;
     }
 
-    .hero img.logo {
+    .logo {
       width: 160px;
       margin-bottom: 20px;
     }
 
-    .hero-content h1 {
-      font-size: 4rem;
-      color: #fff;
+    h1 {
+      font-size: 3rem;
+      margin: 0;
     }
 
-    .hero-content p {
-      font-size: 1.5rem;
-      color: #fff;
+    p {
+      font-size: 1.2rem;
       margin-top: 10px;
     }
 
-    /* Product Section */
-    .products {
+    .product-section {
+      padding: 40px 20px;
+      background-color: #111;
       display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      padding: 30px;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .product, #product-snake-chain {
-      margin: 20px;
-      width: 300px;
-      text-align: center;
-      animation: zoomIn 1s ease-out;
-    }
-
-    .product img, #product-snake-chain img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .product-info, #product-snake-chain div {
-      padding: 20px;
+    .product-box {
       background-color: #1c1c1c;
-      border-radius: 10px;
-      margin-top: 10px;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
     }
 
-    .product-info h3, #product-snake-chain h2 {
-      font-size: 1.5rem;
+    .product-box img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      font-size: 1.8rem;
       color: #d4af37;
+      margin-bottom: 10px;
     }
 
-    .product-info p, #product-snake-chain p {
+    .product-details p {
       font-size: 1rem;
+      color: #ccc;
+      margin: 10px 0;
+    }
+
+    .product-details ul {
+      margin: 15px 0;
+      padding-left: 20px;
+      color: #aaa;
+    }
+
+    .product-details ul li {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 15px;
     }
 
     .order-btn {
-      background-color: #d4af37;
-      color: #fff;
+      display: inline-block;
+      margin-top: 20px;
       padding: 10px 20px;
-      border-radius: 5px;
+      background-color: #d4af37;
+      color: #000;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      margin-top: 10px;
+      border-radius: 5px;
     }
 
     .order-btn:hover {
       background-color: #b58d2b;
     }
 
-    /* WhatsApp Icon */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
+    @media (min-width: 768px) {
+      .product-box {
+        flex-direction: row;
+      }
+
+      .product-box img {
+        width: 50%;
+        height: auto;
+      }
+
+      .product-details {
+        width: 50%;
+      }
     }
 
-    .whatsapp-btn img {
-      width: 50px;
-      height: 50px;
-    }
-
-    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #111;
-      margin-top: 40px;
-      font-size: 14px;
+      background-color: #000;
       color: #aaa;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+      font-size: 14px;
     }
   </style>
 </head>
@@ -141,58 +140,35 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <!-- LOGO -->
-    <img src="images/logo.png" alt="Innovara Logo" class="logo">
-
-    <div class="hero-content">
-      <h1>INNOVARA.LUXE</h1>
-      <p>Where Elegance Meets Innovation</p>
-    </div>
+    <img src="images/logo.png" alt="Innovara Logo" class="logo" />
+    <h1>INNOVARA.LUXE</h1>
+    <p>Where Elegance Meets Innovation</p>
   </section>
 
   <!-- Product Section -->
-  <section class="products">
-    <!-- Product: InnoSnake Luxe Chain -->
-    <div id="product-snake-chain" class="bg-white py-12 px-4 md:px-16">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <!-- Product Image -->
-        <div class="rounded-2xl overflow-hidden shadow-md">
-          <img src="images/snake-chain.jpg" alt="InnoSnake Luxe Chain" class="w-full object-cover">
-        </div>
-
-        <!-- Product Details -->
-        <div>
-          <h2 class="text-3xl font-bold text-gray-800 mb-2">InnoSnake Luxe Chain</h2>
-          <p class="text-lg text-gray-600 mb-4">Sleek. Strong. Serpentine.</p>
-          <p class="text-gray-700 mb-6">
-            Experience the bold elegance of our InnoSnake Luxe Chain — a smooth, high-polish piece inspired by the strength and movement of a serpent. Crafted for men who move differently, this chain is perfect for both daily wear and statement looks.
-          </p>
-          <ul class="text-gray-700 mb-6 list-disc list-inside space-y-2">
-            <li>Material: Premium Stainless Steel / Sterling Silver</li>
-            <li>Color: Polished Silver</li>
-            <li>Sizes: 18", 20", 22", 24"</li>
-            <li>Clasp: Lobster Lock</li>
-            <li>Comfort Fit | Anti-Tarnish | Hypoallergenic</li>
-          </ul>
-          <p class="text-xl font-semibold text-gray-900 mb-4">Starting at ₹999</p>
-
-          <a href="https://wa.me/918527879047?text=Hi%2C%20I'm%20interested%20in%20the%20InnoSnake%20Luxe%20Chain." target="_blank"
-             class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-800 transition">
-            Order on WhatsApp
-          </a>
-        </div>
+  <section class="product-section">
+    <div class="product-box">
+      <img src="images/snake-chain.jpg" alt="InnoSnake Luxe Chain" />
+      <div class="product-details">
+        <h2>InnoSnake Luxe Chain</h2>
+        <p>Sleek. Strong. Serpentine.</p>
+        <p>Experience the bold elegance of our InnoSnake Luxe Chain — a smooth, high-polish piece inspired by the strength and movement of a serpent. Crafted for men who move differently, this chain is perfect for both daily wear and statement looks.</p>
+        <ul>
+          <li>Material: Premium Stainless Steel / Sterling Silver</li>
+          <li>Color: Polished Silver</li>
+          <li>Sizes: 18", 20", 22", 24"</li>
+          <li>Clasp: Lobster Lock</li>
+          <li>Comfort Fit | Anti-Tarnish | Hypoallergenic</li>
+        </ul>
+        <p class="price">Starting at ₹999</p>
+        <a href="https://wa.me/918527879047?text=Hi%2C%20I'm%20interested%20in%20the%20InnoSnake%20Luxe%20Chain." target="_blank" class="order-btn">Order on WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/918527879047?text=Hi%20InnoVara%20Team" class="whatsapp-btn">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp Order">
-  </a>
-
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 INNOVARA.LUXE. All Rights Reserved.</p>
+    &copy; 2025 INNOVARA.LUXE. All Rights Reserved.
   </footer>
 
 </body>
