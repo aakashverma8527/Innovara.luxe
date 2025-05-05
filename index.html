@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Innovara.luxe - Premium Men's Jewelry">
+  <meta name="keywords" content="luxury jewelry, men's accessories, leather bracelet, cuban chain, premium jewelry">
+  <title>Innovara.luxe - Luxury Men's Jewelry</title>
+  <style>
+    /* General Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(45deg, #000, #d4af37);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+      position: relative;
+    }
+
+    .hero img.logo {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      color: #fff;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    .product, #product-snake-chain {
+      margin: 20px;
+      width: 300px;
+      text-align: center;
+      animation: zoomIn 1s ease-out;
+    }
+
+    .product img, #product-snake-chain img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product-info, #product-snake-chain div {
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .product-info h3, #product-snake-chain h2 {
+      font-size: 1.5rem;
+      color: #d4af37;
+    }
+
+    .product-info p, #product-snake-chain p {
+      font-size: 1rem;
+    }
+
+    .order-btn {
+      background-color: #d4af37;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .order-btn:hover {
+      background-color: #b58d2b;
+    }
+
+    /* WhatsApp Icon */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-btn img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- LOGO -->
+    <img src="images/logo.png" alt="Innovara Logo" class="logo">
+
+    <div class="hero-content">
+      <h1>Innovara.luxe</h1>
+      <p>Where Elegance Meets Innovation</p>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products">
+    <!-- Product: InnoSnake Luxe Chain -->
+    <div id="product-snake-chain" class="bg-white py-12 px-4 md:px-16">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <!-- Product Image -->
+        <div class="rounded-2xl overflow-hidden shadow-md">
+          <img src="images/snake-chain.jpg" alt="InnoSnake Luxe Chain" class="w-full object-cover">
+        </div>
+
+        <!-- Product Details -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">InnoSnake Luxe Chain</h2>
+          <p class="text-lg text-gray-600 mb-4">Sleek. Strong. Serpentine.</p>
+          <p class="text-gray-700 mb-6">
+            Experience the bold elegance of our InnoSnake Luxe Chain — a smooth, high-polish piece inspired by the strength and movement of a serpent. Crafted for men who move differently, this chain is perfect for both daily wear and statement looks.
+          </p>
+          <ul class="text-gray-700 mb-6 list-disc list-inside space-y-2">
+            <li>Material: Premium Stainless Steel / Sterling Silver</li>
+            <li>Color: Polished Silver</li>
+            <li>Sizes: 18", 20", 22", 24"</li>
+            <li>Clasp: Lobster Lock</li>
+            <li>Comfort Fit | Anti-Tarnish | Hypoallergenic</li>
+          </ul>
+          <p class="text-xl font-semibold text-gray-900 mb-4">Starting at ₹999</p>
+
+          <a href="https://wa.me/918527879047?text=Hi%2C%20I'm%20interested%20in%20the%20InnoSnake%20Luxe%20Chain." target="_blank"
+             class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-800 transition">
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918527879047?text=Hi%20InnoVara%20Team" class="whatsapp-btn">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp Order">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Innovara.luxe. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
