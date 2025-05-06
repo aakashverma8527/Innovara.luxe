@@ -38,7 +38,22 @@
       margin-top: 10px;
     }
 
-    .product-section {
+    .cta-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #d4af37;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .cta-btn:hover {
+      background-color: #b58d2b;
+    }
+
+    .featured-products {
       padding: 40px 20px;
       background-color: #111;
       display: flex;
@@ -127,21 +142,6 @@
       background-color: #c52e5a;
     }
 
-    @media (min-width: 768px) {
-      .product-box {
-        flex-direction: row;
-      }
-
-      .product-box img {
-        width: 50%;
-        height: auto;
-      }
-
-      .product-details {
-        width: 50%;
-      }
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -158,6 +158,48 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    .about-us {
+      padding: 40px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+
+    .social-proof {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-btn {
+      padding: 10px 20px;
+      background-color: #e1306c;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .social-btn:hover {
+      background-color: #c52e5a;
+    }
+
+    .testimonials {
+      background-color: #1c1c1c;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .faq {
+      background-color: #111;
+      padding: 40px 20px;
+    }
+
+    .faq h3 {
+      margin-bottom: 20px;
+      color: #d4af37;
+    }
   </style>
 </head>
 <body>
@@ -167,16 +209,18 @@
     <img src="images/logo.png" alt="Innovara Logo" class="logo" />
     <h1>INNOVARA.LUXE</h1>
     <p>Where Elegance Meets Innovation</p>
+    <a href="#featured-products" class="cta-btn">Shop Now</a>
   </section>
 
-  <!-- Product Section -->
-  <section class="product-section">
+  <!-- Featured Products Section -->
+  <section id="featured-products" class="featured-products">
+    <h2>Featured Products</h2>
     <div class="product-box">
       <img src="images/snake-chain.jpg" alt="InnoSnake Luxe Chain" />
       <div class="product-details">
         <h2>InnoSnake Luxe Chain</h2>
         <p>Sleek. Strong. Serpentine.</p>
-        <p>Experience the bold elegance of our InnoSnake Luxe Chain — a smooth, high-polish piece inspired by the strength and movement of a serpent. Crafted for men who move differently, this chain is perfect for both daily wear and statement looks.</p>
+        <p>Experience the bold elegance of our InnoSnake Luxe Chain — a smooth, high-polish piece inspired by the strength and movement of a serpent.</p>
         <ul>
           <li>Material: Premium Stainless Steel / Sterling Silver</li>
           <li>Color: Polished Silver</li>
@@ -191,7 +235,35 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- About Us Section -->
+  <section class="about-us">
+    <h2>Our Brand Story</h2>
+    <p>Combining timeless elegance with cutting-edge innovation, Innovara.Luxe brings you the finest in luxury men's jewelry.</p>
+    <p>Founded with the vision of offering men a premium jewelry experience, Innovara.Luxe stands for elegance, sophistication, and unmatched quality.</p>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <p>"The InnoSnake Luxe Chain is simply amazing! It looks incredible, feels premium, and matches my style perfectly." - Alex</p>
+  </section>
+
+  <!-- Social Proof Section -->
+  <section class="social-proof">
+    <a href="https://www.instagram.com/innovara.luxe" class="social-btn">Follow Us on Instagram</a>
+    <a href="https://www.facebook.com/innovara.luxe" class="social-btn">Like Us on Facebook</a>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h3>Frequently Asked Questions</h3>
+    <p><strong>Q:</strong> What materials are used in your jewelry?<br />
+       <strong>A:</strong> We use premium stainless steel and sterling silver, both hypoallergenic and anti-tarnish.</p>
+    <p><strong>Q:</strong> How can I order?<br />
+       <strong>A:</strong> You can easily place an order by clicking the "Order on WhatsApp" button on our product pages.</p>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
     &copy; 2025 INNOVARA.LUXE. All Rights Reserved.<br />
     Follow us on <a href="https://www.instagram.com/innovara.luxe" target="_blank">@innovara.luxe</a>
