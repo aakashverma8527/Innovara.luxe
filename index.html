@@ -59,13 +59,21 @@
       text-align: center;
     }
 
+    .product-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
     .product-box {
       background-color: #1c1c1c;
       border-radius: 12px;
       overflow: hidden;
-      max-width: 1000px;
-      margin: 0 auto;
+      max-width: 500px;
+      margin: 20px;
       box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+      text-align: center;
     }
 
     .product-box img {
@@ -146,40 +154,6 @@
       background-color: #c52e5a;
     }
 
-    .about-us,
-    .testimonials,
-    .faq {
-      padding: 40px 20px;
-      background-color: #111;
-      text-align: center;
-    }
-
-    .faq h3 {
-      color: #d4af37;
-      margin-bottom: 20px;
-    }
-
-    .social-proof {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background-color: #111;
-      padding: 30px 0;
-    }
-
-    .social-btn {
-      padding: 10px 20px;
-      background-color: #e1306c;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .social-btn:hover {
-      background-color: #c52e5a;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -210,56 +184,56 @@
 
   <!-- Featured Products -->
   <section id="featured-products" class="featured-products">
-    <h2>Featured Product</h2>
-    <div class="product-box">
-      <img src="images/snake-chain-gold.jpg" alt="InnoSnake Luxe Chain - Gold" />
-      <div class="product-details">
-        <h2>InnoSnake Luxe Chain</h2>
-        <p>Sleek. Strong. Stylish.</p>
-        <p>Level up your look with this bold yet classy InnoSnake Luxe Chain — available in premium <strong>Gold and Silver</strong> finish. Lightweight, modern, and made to impress.</p>
-        <ul>
-          <li>Colors: Gold & Silver</li>
-          <li>Material: Premium Alloy Blend (Hypoallergenic + Anti-Tarnish)</li>
-          <li>Polish Types: Mirror Gloss, Matt Smooth, Semi-Gloss</li>
-          <li>Sizes: 18", 20", 22", 24"</li>
-          <li>Unisex | Premium Look | Long-lasting Shine</li>
-        </ul>
-        <p class="price">
-          <span style="font-size: 1.2rem; color: #ccc;"><s>MRP ₹1,000</s></span><br>
-          <span>Now Only ₹599</span><br>
-          <small style="color: #aaa;">Free Delivery + 4 Days Return Only</small>
-        </p>
-        <a href="https://wa.me/918527879047?text=Hi%2C%20I'm%20interested%20in%20the%20InnoSnake%20Luxe%20Chain." target="_blank" class="order-btn">Order on WhatsApp</a>
-        <a href="https://www.instagram.com/innovara.luxe" target="_blank" class="insta-btn">View on Instagram</a>
+    <h2>Featured Products</h2>
+    <div class="product-boxes">
+      
+      <!-- Golden Snake Chain -->
+      <div class="product-box">
+        <img src="images/snake-chain-gold.jpg" alt="InnoSnake Luxe Chain - Gold" />
+        <div class="product-details">
+          <h2>InnoSnake Luxe Chain - Gold</h2>
+          <p>Elegant and sleek, perfect for any occasion.</p>
+          <p>This bold gold chain exudes sophistication and style. Designed to elevate your look effortlessly, with a stunning mirror finish.</p>
+          <ul>
+            <li>Color: Gold</li>
+            <li>Material: Premium Alloy Blend (Hypoallergenic + Anti-Tarnish)</li>
+            <li>Sizes: 18", 20", 22", 24"</li>
+            <li>Unisex | Premium Look | Long-lasting Shine</li>
+          </ul>
+          <p class="price">
+            <span style="font-size: 1.2rem; color: #ccc;"><s>MRP ₹1,000</s></span><br>
+            <span>Now Only ₹599</span><br>
+            <small style="color: #aaa;">Free Delivery + 4 Days Return Only</small>
+          </p>
+          <a href="https://wa.me/918527879047?text=Hi%2C%20I'm%20interested%20in%20the%20InnoSnake%20Luxe%20Chain%20Gold." target="_blank" class="order-btn">Order on WhatsApp</a>
+          <a href="https://www.instagram.com/innovara.luxe" target="_blank" class="insta-btn">View on Instagram</a>
+        </div>
       </div>
+
+      <!-- Silver Snake Chain -->
+      <div class="product-box">
+        <img src="images/snake-chain-silver.jpg" alt="InnoSnake Luxe Chain - Silver" />
+        <div class="product-details">
+          <h2>InnoSnake Luxe Chain - Silver</h2>
+          <p>Chic and versatile, for everyday elegance.</p>
+          <p>Our silver variant offers a sleek and polished look, perfect for both casual and formal occasions. Make a statement with understated luxury.</p>
+          <ul>
+            <li>Color: Silver</li>
+            <li>Material: Premium Alloy Blend (Hypoallergenic + Anti-Tarnish)</li>
+            <li>Sizes: 18", 20", 22", 24"</li>
+            <li>Unisex | Premium Look | Long-lasting Shine</li>
+          </ul>
+          <p class="price">
+            <span style="font-size: 1.2rem; color: #ccc;"><s>MRP ₹1,000</s></span><br>
+            <span>Now Only ₹599</span><br>
+            <small style="color: #aaa;">Free Delivery + 4 Days Return Only</small>
+          </p>
+          <a href="https://wa.me/918527879047?text=Hi%2C%20I'm%20interested%20in%20the%20InnoSnake%20Luxe%20Chain%20Silver." target="_blank" class="order-btn">Order on WhatsApp</a>
+          <a href="https://www.instagram.com/innovara.luxe" target="_blank" class="insta-btn">View on Instagram</a>
+        </div>
+      </div>
+
     </div>
-  </section>
-
-  <!-- About Us -->
-  <section class="about-us">
-    <h2>Our Brand Story</h2>
-    <p>Innovara.Luxe is built for the bold. Our mission is to redefine men’s jewelry with elegance, innovation, and comfort. Designed for daily wear with a high-class look.</p>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>What Customers Say</h2>
-    <p>"Got the InnoSnake chain and I'm seriously impressed. Feels rich, looks even better in real life.🔥" – Arjun</p>
-  </section>
-
-  <!-- Social Proof -->
-  <section class="social-proof">
-    <a href="https://www.instagram.com/innovara.luxe" class="social-btn">Follow Us on Instagram</a>
-    <a href="https://www.facebook.com/innovara.luxe" class="social-btn">Like Us on Facebook</a>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq">
-    <h3>Frequently Asked Questions</h3>
-    <p><strong>Q:</strong> What’s the material used?<br/>
-    <strong>A:</strong> We use high-quality anti-tarnish alloy blend, safe on all skin types.</p>
-    <p><strong>Q:</strong> What’s your return policy?<br/>
-    <strong>A:</strong> We offer a 4-day return from delivery date for any issues.</p>
   </section>
 
   <!-- Footer -->
